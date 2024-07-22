@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venkata Satya Surya Phaneendra Pydimarri</title>
+    <title>V S S Phaneendra Pydimarri</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,27 +11,69 @@
         <h1>Welcome to My Personal Website</h1>
         <nav>
             <ul>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('research')">Research</a></li>
+                <li><a href="#" onclick="showSection('education')">Education</a></li>
+                <li><a href="#" onclick="showSection('work')">Work Experience</a></li>
+                <li><a href="#" onclick="showSection('events')">Events and Conferences</a></li>
+                <li><a href="#" onclick="showSection('awards')">Awards</a></li>
+                <li><a href="#" onclick="showSection('others')">Others</a></li>
             </ul>
         </nav>
+        <div class="copyright">
+            <p>&copy; 2024 Venkata Satya Surya Phaneendra Pydimarri</p>
+        </div>
     </header>
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Your resume details here.</p>
+    <section id="home" class="content-section">
+        <h2>Home</h2>
+        <div class="home-content">
+            <img src="your-photo.jpg" alt="Your Photo" class="photo">
+            <p>Hello! I am Phaneendra Pydimarri, a PhD graduate from McMaster University, Canada. My passion lies in continuous learning and I am keenly looking for opportunities in research and development within the following areas:</p>
+            <ul>
+                <li>Quantum Computing & Information Theory</li>
+                <li>Quantum Communications</li>
+                <li>Mathematical Ideas and Implementation in Signal and Image Processing</li>
+                <li>Embedded Systems and Communication</li>
+            </ul>
+            <p>My goal is to become a competent and versatile researcher/developer. I am currently working as a Postdoctoral Researcher at TiHAN, Indian Institute of Technology, Hyderabad, India (Jul 2023 - Present). I am involved with the Technology Innovation Hub on Autonomous Navigation (TiHAN), funded by the Government of India. My work focuses on 5G/6G cellular-based vehicular communication (connected vehicles), aiming for low-latency communication and data transfer using mounted sensors on vehicles, with the ultimate goal of quantum sensing, navigation, and communication.</p>
+            <p>Previously, I have worked on use case development in classical connected vehicle technology, including:</p>
+            <ul>
+                <li>Vehicle-to-Vehicle Communication: Blind Spot Detection Warning, Lane Change Warning, Emergency Brake Warning</li>
+                <li>Vehicle-to-Cloud Communication: Dynamical Offloading Data to Cloud from Vehicle in Real Time</li>
+            </ul>
+            <p>My current mailing address is:</p>
+            <address>
+                TiHAN IITH Foundation<br>
+                Indian Institute of Technology, Hyderabad<br>
+                Kandi - 502284, Telangana, India<br>
+                <a href="mailto:phaneendrapydimarri@gmail.com">phaneendrapydimarri@gmail.com</a>
+            </address>
+        </div>
     </section>
-    <section id="research">
-        <h2>Research Work</h2>
-        <p>Details of your research work.</p>
+    <section id="research" class="content-section" style="display:none;">
+        <h2>Research</h2>
+        <p>Your research interests, skill sets, publications, patents, and projects.</p>
     </section>
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <p>Information about your hobbies.</p>
+    <section id="education" class="content-section" style="display:none;">
+        <h2>Education</h2>
+        <p>Details of your education and certification courses.</p>
     </section>
-    <footer>
-        <p>&copy; 2024 Venkata Satya Surya Phaneendra Pydimarri</p>
-    </footer>
+    <section id="work" class="content-section" style="display:none;">
+        <h2>Work Experience</h2>
+        <p>Details of your job experience.</p>
+    </section>
+    <section id="events" class="content-section" style="display:none;">
+        <h2>Events and Conferences</h2>
+        <p>Conferences and events you attended.</p>
+    </section>
+    <section id="awards" class="content-section" style="display:none;">
+        <h2>Awards</h2>
+        <p>Awards you received.</p>
+    </section>
+    <section id="others" class="content-section" style="display:none;">
+        <h2>Others</h2>
+        <p>Co-curricular activities, hobbies, languages known.</p>
+    </section>
     <script src="scripts.js"></script>
 </body>
 </html>
